@@ -15,9 +15,6 @@ namespace SunsilEdizioni.DB.Model
         [Column("surname")]
         public string Surname { get; set; }
 
-        //[Column("comment"), StringLength(200), DataType(DataType.Text)]
-        //public string Comment { get; set; }
-
         [Column("email")]
         public string Email { get; set; }
 

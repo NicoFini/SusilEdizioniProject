@@ -5,27 +5,27 @@ namespace SunsilEdizioni.Core
 {
     public class ApplicationManagerUsers
     {
-        StorageServiceUsers _storageServiceComments;
-        public ApplicationManagerUsers(StorageServiceUsers storageServiceComments)
+        StorageServiceUsers _storageServiceUsers;
+        public ApplicationManagerUsers(StorageServiceUsers storageServiceUsers)
         {
-            _storageServiceComments = storageServiceComments;
+            _storageServiceUsers = storageServiceUsers;
         }
-        public List<User> GetAllUsers() => _storageServiceComments.GetUser();
+        public List<User> GetAllUsers() => _storageServiceUsers.GetUser();
 
-        public bool IsCommentsListEmpty() => GetAllUsers().Count == 0;
+        public bool IsUsersListEmpty() => GetAllUsers().Count == 0;
 
-        public User GetUser(int id) => _storageServiceComments.GetUser(id);
+        public User GetUser(int id) => _storageServiceUsers.GetUser(id);
 
         public User CreateUser(int id, string name, string surname, string email, string password, bool isAdmin)
         {
-            return _storageServiceComments.CreateUser(id, name, surname, email, password, isAdmin);   
+            return _storageServiceUsers.CreateUser(id, name, surname, email, password, isAdmin);   
         }
 
-        public User EditComment(User user)
+        public User EditUser(User user)
         {
-            return _storageServiceComments.EditUser(user);
+            return _storageServiceUsers.EditUser(user);
         }
 
-        public bool DeleteUser(int id) => _storageServiceComments.DeleteUser(id);
+        public bool DeleteUser(int id) => _storageServiceUsers.DeleteUser(id);
     }
 }

@@ -17,11 +17,11 @@ namespace SunsilEdizioni.RestAPI.Controllers
             _managerUser = managerUser;
         }
         
-        [HttpGet("Get_All")]
+        [HttpGet("Get_All_User")]
         public ActionResult<List<UserDto>> GetAllUser() =>
             Ok(_managerUser.GetAllUsers().Select(s => UserDtoMapper.From(s)).ToList());
 
-        [HttpGet("Get_By_Id"+"{id:int}")]
+        [HttpGet("Get_User_By_Id"+"{id:int}")]
         public ActionResult<UserDto> GetUserById( int id)
         {
             try
@@ -36,21 +36,22 @@ namespace SunsilEdizioni.RestAPI.Controllers
             }
         }
         
-        [HttpPost("Register_New")]
+        [HttpPost("Register_New_User")]
         public ActionResult<UserDto> CreateUser([FromBody] UserRequest body)
         {
             try
             {
-                var c = _managerUser.CreateUser(body.Id, body.Name, body.Surname, body.Email, body.Password, body.IsAdmin);
-                var uri = $"/Insert/{c}";
-                return Created(uri, UserDtoMapper.From(c));
+                var user = _managerUser.CreateUser(body.Id, body.Name, body.Surname, body.Email, body.Password, body.IsAdmin);
+                var uri = $"/Insert/{user}";
+                return Created(uri, UserDtoMapper.From(user));
             }
             catch (WrongLengthComment ex)
             {
                 return BadRequest(new ErrorResponse(ex.Message));
             }
         }
-        [HttpDelete("Delete_Comment"+"{id:int}")]
+
+        [HttpDelete("Delete_User"+"{id:int}")]
         public ActionResult<bool> DeleteUser([FromRoute] int id)
         {
             try
@@ -65,7 +66,7 @@ namespace SunsilEdizioni.RestAPI.Controllers
             }
         }
 
-        [HttpPut("Modify_Comment")]
+        [HttpPut("Edit_User")]
         public ActionResult<string> EditUser([FromBody] UserRequest body)
         {
             try

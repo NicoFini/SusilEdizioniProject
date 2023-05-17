@@ -3,7 +3,6 @@ using SunsilEdizioni.DB.Model;
 
 namespace SunsilEdizioni.DB
 {
-{
     public class SunsilEdizioniDBContext : DbContext
     {
         public DbSet<UsersEntity>? Users { get; set; }
