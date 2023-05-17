@@ -1,7 +1,4 @@
-﻿using System;
-using System.Xml.Linq;
-using SunsilEdizioni.Core.Exceptions;
-using SunsilEdizioni.Core.Model;
+﻿using SunsilEdizioni.Core.Model;
 using SunsilEdizioni.RestAPI.Model;
 
 namespace SunsilEdizioni.RestAPI.Mapper

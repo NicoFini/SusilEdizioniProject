@@ -1,8 +1,6 @@
 using SunsilEdizioni.Core;
 using SunsilEdizioni.Core.Service;
 using SunsilEdizioni.DB;
-using System.Web.Http;
-using System.Web.Http.Cors;
 
 namespace Comments.RestAPI
 {

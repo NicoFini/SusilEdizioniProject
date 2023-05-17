@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using SunsilEdizioni.Core.Model;
-using SunsilEdizioni.Core.Model;
+﻿using SunsilEdizioni.Core.Model;
 
 namespace SunsilEdizioni.Core.Service
 {

@@ -1,9 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using SunsilEdizioni.DB.Model;
 
 namespace SunsilEdizioni.DB
+{
 {
     public class SunsilEdizioniDBContext : DbContext
     {

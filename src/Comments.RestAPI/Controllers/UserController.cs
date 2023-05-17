@@ -1,12 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
-using System;
 using SunsilEdizioni.Core;
 using SunsilEdizioni.Core.Exceptions;
-using SunsilEdizioni.Core.Model;
-using SunsilEdizioni.Core.Service;
 using SunsilEdizioni.RestAPI.Mapper;
 using SunsilEdizioni.RestAPI.Model;
-using Microsoft.AspNetCore.Cors;
 
 namespace SunsilEdizioni.RestAPI.Controllers
 {
