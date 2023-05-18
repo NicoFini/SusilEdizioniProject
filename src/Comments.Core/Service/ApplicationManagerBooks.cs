@@ -1,7 +1,7 @@
-﻿using SunsilEdizioni.Core.Model;
-using SunsilEdizioni.Core.Service;
+﻿using SusilEdizioni.Core.Model;
+using SusilEdizioni.Core.Service;
 
-namespace SunsilEdizioni.Core
+namespace SusilEdizioni.Core
 {
     public class ApplicationManagerBooks
     {

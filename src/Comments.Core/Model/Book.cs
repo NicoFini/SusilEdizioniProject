@@ -1,4 +1,4 @@
-﻿namespace SunsilEdizioni.Core.Model
+﻿namespace SusilEdizioni.Core.Model
 {
     public class Book
     {

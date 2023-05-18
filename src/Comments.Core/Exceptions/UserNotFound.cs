@@ -1,4 +1,4 @@
-﻿namespace SunsilEdizioni.Core.Exceptions
+﻿namespace SusilEdizioni.Core.Exceptions
 {
     public class UserNotFound : Exception
     {

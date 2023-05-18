@@ -1,7 +1,7 @@
-﻿using SunsilEdizioni.Core.Model;
-using SunsilEdizioni.DB.Model;
+﻿using SusilEdizioni.Core.Model;
+using SusilEdizioni.DB.Model;
 
-namespace SunsilEdizioni.DB.Mapper
+namespace SusilEdizioni.DB.Mapper
 {
     public class UsersEntityMapper
     {

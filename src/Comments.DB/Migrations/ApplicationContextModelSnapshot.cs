@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 
 #nullable disable
 
-namespace SunsilEdizioni.DB.Migrations
+namespace SusilEdizioni.DB.Migrations
 {
-    [DbContext(typeof(SunsilEdizioniDBContext))]
+    [DbContext(typeof(SusilEdizioniDBContext))]
     partial class ApplicationContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
@@ -16,7 +16,7 @@ namespace SunsilEdizioni.DB.Migrations
                 .HasAnnotation("ProductVersion", "6.0.10")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
-            modelBuilder.Entity("SunsilEdizioni.DB.Model.UsersEntity", b =>
+            modelBuilder.Entity("SusilEdizioni.DB.Model.UsersEntity", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()

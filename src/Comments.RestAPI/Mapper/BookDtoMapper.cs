@@ -1,7 +1,7 @@
-﻿using SunsilEdizioni.Core.Model;
-using SunsilEdizioni.RestAPI.Model;
+﻿using SusilEdizioni.Core.Model;
+using SusilEdizioni.RestAPI.Model;
 
-namespace SunsilEdizioni.RestAPI.Mapper
+namespace SusilEdizioni.RestAPI.Mapper
 {
     public class BookDtoMapper
     {

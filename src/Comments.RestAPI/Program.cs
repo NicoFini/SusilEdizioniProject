@@ -1,6 +1,6 @@
-using SunsilEdizioni.Core;
-using SunsilEdizioni.Core.Service;
-using SunsilEdizioni.DB;
+using SusilEdizioni.Core;
+using SusilEdizioni.Core.Service;
+using SusilEdizioni.DB;
 
 namespace Comments.RestAPI
 {

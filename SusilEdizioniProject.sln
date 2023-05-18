@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunsilEdizioni.Core", "src\Comments.Core\SunsilEdizioni.Core.csproj", "{23C8573A-3784-40BF-92CE-658073208D63}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SusilEdizioni.Core", "src\Comments.Core\SusilEdizioni.Core.csproj", "{23C8573A-3784-40BF-92CE-658073208D63}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunsilEdizioni.DB", "src\Comments.DB\SunsilEdizioni.DB.csproj", "{72FDF432-A33B-40C1-A17B-23C04CACB1F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SusilEdizioni.DB", "src\Comments.DB\SusilEdizioni.DB.csproj", "{72FDF432-A33B-40C1-A17B-23C04CACB1F5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunsilEdizioni.RestAPI", "src\Comments.RestAPI\SunsilEdizioni.RestAPI.csproj", "{F10886A6-B3D6-4675-8B00-CD49D8B10643}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SusilEdizioni.RestAPI", "src\Comments.RestAPI\SusilEdizioni.RestAPI.csproj", "{F10886A6-B3D6-4675-8B00-CD49D8B10643}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,14 +1,14 @@
-﻿using SunsilEdizioni.Core.Exceptions;
-using SunsilEdizioni.Core.Model;
-using SunsilEdizioni.Core.Service;
-using SunsilEdizioni.DB.Mapper;
-using SunsilEdizioni.DB.Model;
+﻿using SusilEdizioni.Core.Exceptions;
+using SusilEdizioni.Core.Model;
+using SusilEdizioni.Core.Service;
+using SusilEdizioni.DB.Mapper;
+using SusilEdizioni.DB.Model;
 
-namespace SunsilEdizioni.DB
+namespace SusilEdizioni.DB
 {
     public class MySqlStorageService : StorageServiceUsers, StorageServiceBooks
     { 
-        private SunsilEdizioniDBContext _context;
+        private SusilEdizioniDBContext _context;
 
         public MySqlStorageService()
         {

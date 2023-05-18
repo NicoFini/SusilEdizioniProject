@@ -1,6 +1,6 @@
-﻿using SunsilEdizioni.Core.Model;
+﻿using SusilEdizioni.Core.Model;
 
-namespace SunsilEdizioni.Core.Service
+namespace SusilEdizioni.Core.Service
 {
     public interface StorageServiceUsers
     {

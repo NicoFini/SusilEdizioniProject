@@ -1,12 +1,12 @@
-﻿using SunsilEdizioni.Core.Model;
-using SunsilEdizioni.DB.Model;
+﻿using SusilEdizioni.Core.Model;
+using SusilEdizioni.DB.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SunsilEdizioni.DB.Mapper
+namespace SusilEdizioni.DB.Mapper
 {
     public class BooksEntityMapper
     {

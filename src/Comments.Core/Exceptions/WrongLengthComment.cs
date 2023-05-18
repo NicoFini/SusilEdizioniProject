@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using SunsilEdizioni.Core.Model;
+using SusilEdizioni.Core.Model;
 
-namespace SunsilEdizioni.Core.Exceptions
+namespace SusilEdizioni.Core.Exceptions
 {
     public class WrongLengthComment : Exception
     {

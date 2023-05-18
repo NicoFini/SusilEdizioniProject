@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 
-namespace SunsilEdizioni.DB.Model
+namespace SusilEdizioni.DB.Model
 {
     [Table("Books")]
     public class BooksEntity

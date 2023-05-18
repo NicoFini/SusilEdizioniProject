@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace SunsilEdizioni.RestAPI.Model
+namespace SusilEdizioni.RestAPI.Model
 {
     public class BookRequest
     {

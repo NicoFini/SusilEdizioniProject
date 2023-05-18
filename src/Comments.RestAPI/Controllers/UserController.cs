@@ -1,10 +1,10 @@
 using Microsoft.AspNetCore.Mvc;
-using SunsilEdizioni.Core;
-using SunsilEdizioni.Core.Exceptions;
-using SunsilEdizioni.RestAPI.Mapper;
-using SunsilEdizioni.RestAPI.Model;
+using SusilEdizioni.Core;
+using SusilEdizioni.Core.Exceptions;
+using SusilEdizioni.RestAPI.Mapper;
+using SusilEdizioni.RestAPI.Model;
 
-namespace SunsilEdizioni.RestAPI.Controllers
+namespace SusilEdizioni.RestAPI.Controllers
 {
     [ApiController]
     [Route("User")]
