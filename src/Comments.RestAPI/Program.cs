@@ -24,6 +24,10 @@ namespace Comments.RestAPI
 
             builder.Services.AddSingleton<ApplicationManagerUsers>();
 
+            builder.Services.AddSingleton<StorageServiceBooks, MySqlStorageService>();
+
+            builder.Services.AddSingleton<ApplicationManagerBooks>();
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.

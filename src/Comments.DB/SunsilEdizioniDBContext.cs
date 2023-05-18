@@ -6,6 +6,7 @@ namespace SunsilEdizioni.DB
     public class SunsilEdizioniDBContext : DbContext
     {
         public DbSet<UsersEntity>? Users { get; set; }
+        public DbSet<BooksEntity>? Books { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

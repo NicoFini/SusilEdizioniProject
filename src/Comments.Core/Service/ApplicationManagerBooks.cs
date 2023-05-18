@@ -1,11 +1,7 @@
 ﻿using SunsilEdizioni.Core.Model;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using SunsilEdizioni.Core.Service;
 
-namespace SunsilEdizioni.Core.Service
+namespace SunsilEdizioni.Core
 {
     public class ApplicationManagerBooks
     {
