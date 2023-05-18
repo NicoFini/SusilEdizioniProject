@@ -26,8 +26,8 @@ namespace SunsilEdizioni.RestAPI.Controllers
         {
             try
             {
-                var s = _managerUser.GetUser(id);
-                return Ok(UserDtoMapper.From(s));
+                var user = _managerUser.GetUser(id);
+                return Ok(UserDtoMapper.From(user));
             }
 
             catch (UserNotFound e)
@@ -56,9 +56,9 @@ namespace SunsilEdizioni.RestAPI.Controllers
         {
             try
             {
-                var c = _managerUser.DeleteUser(id);
+                var user = _managerUser.DeleteUser(id);
                
-                return c;
+                return user;
             }
             catch (UserNotFound ex)
             {

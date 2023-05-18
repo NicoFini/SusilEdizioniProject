@@ -12,16 +12,16 @@ namespace Comments.RestAPI
 
             builder.Services.AddCors();
 
-            // Add services to the container.
             builder.Services.AddControllersWithViews();
 
-
             builder.Services.AddControllers();
-            // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+
             builder.Services.AddEndpointsApiExplorer();
+
             builder.Services.AddSwaggerGen();
 
             builder.Services.AddSingleton<StorageServiceUsers, MySqlStorageService>();
+
             builder.Services.AddSingleton<ApplicationManagerUsers>();
 
             var app = builder.Build();
@@ -33,7 +33,6 @@ namespace Comments.RestAPI
                 app.UseSwaggerUI();
             }
 
-
             app.UseCors(builder =>
             {
                 builder.AllowAnyOrigin()
@@ -41,9 +40,7 @@ namespace Comments.RestAPI
                        .AllowAnyHeader();
             });
 
-
             app.UseAuthorization();
-
 
             app.MapControllers();
 

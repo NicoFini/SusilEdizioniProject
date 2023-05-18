@@ -4,6 +4,8 @@ using SunsilEdizioni.Core;
 using SunsilEdizioni.RestAPI.Mapper;
 using SunsilEdizioni.RestAPI.Model;
 using SunsilEdizioni.Core.Service;
+using SunsilEdizioni.Core.Model;
+using static System.Reflection.Metadata.BlobBuilder;
 
 namespace SunsilEdizioni.RestAPI.Controllers
 {
@@ -29,8 +31,8 @@ namespace SunsilEdizioni.RestAPI.Controllers
             {
                 try
                 {
-                    var s = _managerBook.GetBook(id);
-                    return Ok(BookDtoMapper.From(s));
+                    var book = _managerBook.GetBook(id);
+                    return Ok(BookDtoMapper.From(book));
                 }
 
                 catch (BookNotFound e)
@@ -44,9 +46,9 @@ namespace SunsilEdizioni.RestAPI.Controllers
             {
                 try
                 {
-                    var c = _managerBook.CreateBook(body.Id, body.Title, body.Author, body.Price, body.Publisher, body.YearPublished, body.ISBN);
-                    var uri = $"/Insert/{c}";
-                    return Created(uri, BookDtoMapper.From(c));
+                    var book = _managerBook.CreateBook(body.Id, body.Title, body.Author, body.Price, body.Publisher, body.YearPublished, body.ISBN);
+                    var uri = $"/Insert/{book}";
+                    return Created(uri, BookDtoMapper.From(book));
                 }
                 catch (WrongLengthComment ex)
                 {
@@ -59,9 +61,9 @@ namespace SunsilEdizioni.RestAPI.Controllers
             {
                 try
                 {
-                    var c = _managerBook.DeleteBook(id);
+                    var book = _managerBook.DeleteBook(id);
 
-                    return c;
+                    return book;
                 }
                 catch (BookNotFound ex)
                 {
