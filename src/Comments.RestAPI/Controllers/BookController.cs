@@ -41,7 +41,10 @@ namespace SusilEdizioni.RestAPI.Controllers
         {
             try
             {
-                var book = _managerBook.CreateBook(body.Id, body.Title, body.Author, body.Price, body.Publisher, body.YearPublished, body.ISBN, body.UserID);
+                var book = _managerBook.CreateBook(body.Id, body?.UserID, body.PublishedType, body.Genre, body.DatePublished, body.Method, body.HasWebSite, body.Title,
+                body.Subtitle, body.Description, body.IsActive, body.Price, body.Weight, body.DiscountRate, body.Format,
+                body.PageNumber, body.Arguments, body.AuthorName, body.AuthorSurname, body.Role, body.SaleRate, body.Package,
+                body.Cover, body.Grammage, body.Print);
                 var uri = $"/Insert/{book}";
                 return Created(uri, BookDtoMapper.From(book));
             }
@@ -72,7 +75,12 @@ namespace SusilEdizioni.RestAPI.Controllers
             try
             {
                 _managerBook.DeleteBook(body.Id);
-                _managerBook.CreateBook(body.Id, body.Title, body.Author, body.Price, body.Publisher, body.YearPublished, body.ISBN, body.UserID);
+
+                _managerBook.CreateBook(body.Id, body?.UserID, body.PublishedType, body.Genre, body.DatePublished, body.Method, body.HasWebSite, body.Title,
+                body.Subtitle, body.Description, body.IsActive, body.Price, body.Weight, body.DiscountRate, body.Format,
+                body.PageNumber, body.Arguments, body.AuthorName, body.AuthorSurname, body.Role, body.SaleRate, body.Package,
+                body.Cover, body.Grammage, body.Print);
+
                 return Ok();
             }
             catch (WrongLengthComment ex)

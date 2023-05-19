@@ -16,9 +16,23 @@ namespace SusilEdizioni.Core
 
         public Book GetBook(int id) => _storageServiceBooks.GetBook(id);
 
-        public Book CreateBook(int id, string title, string author, decimal price, string publicher, int yearPublished, string ISBN, int? userID)
+        public Book CreateBook(int id, int? userID,
+            PublishedType publishedType,
+            Genre genre, DateTime datePublished,
+            Method method, bool hasWebSite, string title,
+            string subtitle, string description,
+            bool isActive, decimal price,
+            decimal weight, decimal discountRate,
+            string format, int pageNumber,
+            string arguments, string authorName,
+            string authorSurname, AuthorRole role,
+            decimal saleRate, Package package,
+            Cover cover, Grammage grammage, Print print)
         {
-            return _storageServiceBooks.CreateBook(id, title, author, price, publicher, yearPublished, ISBN, userID);
+            return _storageServiceBooks.CreateBook( id, userID,  publishedType,  genre,  datePublished,  method,  hasWebSite,  title,
+                 subtitle,  description,  isActive,  price,  weight,  discountRate,  format,
+                 pageNumber,  arguments,  authorName,  authorSurname,  role,  saleRate,  package,
+                 cover,  grammage,  print);
         }
 
         public Book EditBook(Book Book)

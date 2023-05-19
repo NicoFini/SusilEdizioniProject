@@ -3,6 +3,8 @@ using SusilEdizioni.Core.Model;
 using SusilEdizioni.Core.Service;
 using SusilEdizioni.DB.Mapper;
 using SusilEdizioni.DB.Model;
+using System.Data;
+using System.Drawing;
 
 namespace SusilEdizioni.DB
 {
@@ -84,19 +86,47 @@ namespace SusilEdizioni.DB
             return true;
         }
 
-        public Book CreateBook(int id, string title, string author, decimal price, string publisher, int yearPublished, string ISBN, int? userID)
+        public Book CreateBook(int id, int? userID,
+            PublishedType publishedType,
+            Genre genre, DateTime datePublished,
+            Method method, bool hasWebSite, string title,
+            string subtitle, string description,
+            bool isActive, decimal price,
+            decimal weight, decimal discountRate,
+            string format, int pageNumber,
+            string arguments, string authorName,
+            string authorSurname, AuthorRole role,
+            decimal saleRate, Package package,
+            Cover cover, Grammage grammage, Print print)
         {
             BooksEntity createBook = new BooksEntity
                 {
                 Id = id,
+                UserID = userID,
+                PublishedType = publishedType,
+                Genre = genre,
+                DatePublished = datePublished,
+                Method = method,
+                HasWebSite = hasWebSite,
                 Title = title,
-                Author = author,
+                Subtitle = subtitle,
+                Description = description,
+                IsActive = isActive,
                 Price = price,
-                Publisher = publisher,
-                YearPublished = yearPublished,
-                ISBN = ISBN,
-                UserID = userID
-            };
+                Weight = weight,
+                DiscountRate = discountRate,
+                Format = format,
+                PageNumber = pageNumber,
+                Arguments = arguments,
+                AuthorName = authorName,
+                AuthorSurname = authorSurname,
+                Role = role,
+                SaleRate = saleRate,
+                Package = package,
+                Cover = cover,
+                Grammage = grammage,
+                Print = print,
+        };
 
             _context.Books.Add(createBook);
             _context.SaveChanges();
