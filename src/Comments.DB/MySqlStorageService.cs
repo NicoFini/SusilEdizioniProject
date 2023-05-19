@@ -84,7 +84,7 @@ namespace SusilEdizioni.DB
             return true;
         }
 
-        public Book CreateBook(int id, string title, string author, decimal price, string publisher, int yearPublished, string ISBN)
+        public Book CreateBook(int id, string title, string author, decimal price, string publisher, int yearPublished, string ISBN, int? userID)
         {
             BooksEntity createBook = new BooksEntity
                 {
@@ -94,7 +94,8 @@ namespace SusilEdizioni.DB
                 Price = price,
                 Publisher = publisher,
                 YearPublished = yearPublished,
-                ISBN = ISBN
+                ISBN = ISBN,
+                UserID = userID
             };
 
             _context.Books.Add(createBook);

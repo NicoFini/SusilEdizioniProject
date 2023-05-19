@@ -28,6 +28,6 @@ namespace SusilEdizioni.DB.Model
         public string ISBN { get; set; }
 
         [Column("userID")]
-        public int UserID { get; set; }
+        public int? UserID { get; set; }
     }
 }

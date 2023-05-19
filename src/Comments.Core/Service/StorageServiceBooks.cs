@@ -4,7 +4,7 @@ namespace SusilEdizioni.Core.Service
 {
     public interface StorageServiceBooks
     {
-        Book CreateBook(int id, string title, string author, decimal price, string publicher, int yearPublished, string ISBN);
+        Book CreateBook(int id, string title, string author, decimal price, string publicher, int yearPublished, string ISBN, int? userID);
 
         List<Book> GetBook();
 

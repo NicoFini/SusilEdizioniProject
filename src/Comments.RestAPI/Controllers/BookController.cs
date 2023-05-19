@@ -41,7 +41,7 @@ namespace SusilEdizioni.RestAPI.Controllers
         {
             try
             {
-                var book = _managerBook.CreateBook(body.Id, body.Title, body.Author, body.Price, body.Publisher, body.YearPublished, body.ISBN);
+                var book = _managerBook.CreateBook(body.Id, body.Title, body.Author, body.Price, body.Publisher, body.YearPublished, body.ISBN, body.UserID);
                 var uri = $"/Insert/{book}";
                 return Created(uri, BookDtoMapper.From(book));
             }
@@ -72,7 +72,7 @@ namespace SusilEdizioni.RestAPI.Controllers
             try
             {
                 _managerBook.DeleteBook(body.Id);
-                _managerBook.CreateBook(body.Id, body.Title, body.Author, body.Price, body.Publisher, body.YearPublished, body.ISBN);
+                _managerBook.CreateBook(body.Id, body.Title, body.Author, body.Price, body.Publisher, body.YearPublished, body.ISBN, body.UserID);
                 return Ok();
             }
             catch (WrongLengthComment ex)
