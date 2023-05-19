@@ -9,8 +9,9 @@
         public string _publisher;
         public int _yearPublished;
         public string _ISBN;
+        public int? _userID;
 
-        public Book(int id, string title, string author, decimal price, string publisher, int yearPublished, string ISBN)
+        public Book(int id, string title, string author, decimal price, string publisher, int yearPublished, string ISBN, int? userID)
         {
             _id = id;
             _title = title;
@@ -19,6 +20,7 @@
             _publisher = publisher;
             _yearPublished = yearPublished;
             _ISBN = ISBN;
+            _userID = userID;
         }
     }
 }

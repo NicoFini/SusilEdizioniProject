@@ -27,7 +27,7 @@ namespace SusilEdizioni.DB
             return true;
         }
 
-        public User CreateUser(int id, string name, string surname, string email, string password, bool isAdmin)
+        public User CreateUser(int id, string name, string surname, string email, string password, bool isAdmin, int? bookID)
         {
             UsersEntity createUser = new UsersEntity
             {              
@@ -36,7 +36,8 @@ namespace SusilEdizioni.DB
                 Surname = surname,
                 Email = email,
                 Password = password,
-                IsAdmin = isAdmin
+                IsAdmin = isAdmin,
+                BookID = bookID
             };
 
             _context.Users.Add(createUser);

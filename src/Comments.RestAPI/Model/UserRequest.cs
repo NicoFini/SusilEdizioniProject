@@ -21,5 +21,8 @@ namespace SusilEdizioni.RestAPI.Model
 
         [DisplayName("IsAdmin")]
         public bool IsAdmin { get; set; }
+
+        [DisplayName("bookID")]
+        public int? BookID { get; set; }
     }
 }

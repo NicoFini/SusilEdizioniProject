@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SusilEdizioni.RestAPI.Model
 {
@@ -24,5 +25,8 @@ namespace SusilEdizioni.RestAPI.Model
 
         [DisplayName("ISBN")]
         public string ISBN { get; set; }
+
+        [DisplayName("userID")]
+        public int? UserID { get; set; }
     }
 }

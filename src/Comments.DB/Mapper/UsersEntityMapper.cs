@@ -7,7 +7,7 @@ namespace SusilEdizioni.DB.Mapper
     {
         public static User From(UsersEntity entity)
         {
-            return new User(entity.Id, entity.Name, entity.Surname, entity.Email, entity.Password, entity.IsAdmin);
+            return new User(entity.Id, entity.Name, entity.Surname, entity.Email, entity.Password, entity.IsAdmin, entity?.BookID);
         }
     }
 }

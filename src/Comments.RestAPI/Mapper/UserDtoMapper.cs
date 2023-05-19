@@ -12,7 +12,8 @@ namespace SusilEdizioni.RestAPI.Mapper
             Surname = user._surname,
             Email = user._email,
             Password = user._password,
-            IsAdmin = user._isAdmin
+            IsAdmin = user._isAdmin,
+            BookID = user?._bookID
         };
     }
 }

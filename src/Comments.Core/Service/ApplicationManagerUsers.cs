@@ -16,9 +16,9 @@ namespace SusilEdizioni.Core
 
         public User GetUser(int id) => _storageServiceUsers.GetUser(id);
 
-        public User CreateUser(int id, string name, string surname, string email, string password, bool isAdmin)
+        public User CreateUser(int id, string name, string surname, string email, string password, bool isAdmin, int? bookID)
         {
-            return _storageServiceUsers.CreateUser(id, name, surname, email, password, isAdmin);   
+            return _storageServiceUsers.CreateUser(id, name, surname, email, password, isAdmin, bookID);   
         }
 
         public User EditUser(User user)

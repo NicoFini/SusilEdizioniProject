@@ -41,7 +41,7 @@ namespace SusilEdizioni.RestAPI.Controllers
         {
             try
             {
-                var user = _managerUser.CreateUser(body.Id, body.Name, body.Surname, body.Email, body.Password, body.IsAdmin);
+                var user = _managerUser.CreateUser(body.Id, body.Name, body.Surname, body.Email, body.Password, body.IsAdmin, body.BookID);
                 var uri = $"/Insert/{user}";
                 return Created(uri, UserDtoMapper.From(user));
             }
@@ -72,7 +72,7 @@ namespace SusilEdizioni.RestAPI.Controllers
             try
             {
                 _managerUser.DeleteUser(body.Id);
-                _managerUser.CreateUser(body.Id, body.Name, body.Surname, body.Email, body.Password, body.IsAdmin);
+                _managerUser.CreateUser(body.Id, body.Name, body.Surname, body.Email, body.Password, body.IsAdmin, body.BookID);
                 return Ok();
             }
             catch (WrongLengthComment ex)

@@ -12,7 +12,7 @@ namespace SusilEdizioni.DB.Mapper
     {
         public static Book From(BooksEntity entity)
         {
-            return new Book(entity.Id, entity.Title, entity.Author, entity.Price, entity.Publisher, entity.YearPublished, entity.ISBN);
+            return new Book(entity.Id, entity.Title, entity.Author, entity.Price, entity.Publisher, entity.YearPublished, entity.ISBN, entity?.UserID);
         }
     }
 }

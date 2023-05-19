@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SusilEdizioni.RestAPI.Model
 {
@@ -21,5 +22,8 @@ namespace SusilEdizioni.RestAPI.Model
 
         [DisplayName("IsAdmin")]
         public bool IsAdmin { get; set; }
+
+        [DisplayName("bookID")]
+        public int? BookID { get; set; }
     }
 }

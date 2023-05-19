@@ -4,7 +4,7 @@ namespace SusilEdizioni.Core.Service
 {
     public interface StorageServiceUsers
     {
-        User CreateUser(int id, string name, string surname, string email, string password, bool isAdmin);
+        User CreateUser(int id, string name, string surname, string email, string password, bool isAdmin, int? bookID);
 
         List<User> GetUser();
 

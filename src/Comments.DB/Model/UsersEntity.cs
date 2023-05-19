@@ -23,6 +23,9 @@ namespace SusilEdizioni.DB.Model
 
         [Column("isAdmin")]
         public bool IsAdmin { get; set; }
+
+        [Column("bookID")]
+        public int? BookID { get; set; }
     }
 }
 

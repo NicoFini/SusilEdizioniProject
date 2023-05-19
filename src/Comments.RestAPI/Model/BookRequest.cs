@@ -24,5 +24,8 @@ namespace SusilEdizioni.RestAPI.Model
 
         [DisplayName("ISBN")]
         public string ISBN { get; set; }
+
+        [DisplayName("userID")]
+        public int UserID { get; set; }
     }
 }

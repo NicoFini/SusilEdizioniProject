@@ -26,5 +26,8 @@ namespace SusilEdizioni.DB.Model
 
         [Column("ISBN")]
         public string ISBN { get; set; }
+
+        [Column("userID")]
+        public int UserID { get; set; }
     }
 }

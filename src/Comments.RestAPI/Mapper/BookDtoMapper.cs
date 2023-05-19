@@ -13,7 +13,8 @@ namespace SusilEdizioni.RestAPI.Mapper
             Price = book._price,
             Publisher = book._publisher,
             YearPublished = book._yearPublished,
-            ISBN = book._ISBN
+            ISBN = book._ISBN,
+            UserID = book?._userID
         };
     }
 }
